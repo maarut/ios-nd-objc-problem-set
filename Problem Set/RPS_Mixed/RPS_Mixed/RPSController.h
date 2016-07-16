@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RPS_Mixed-Swift.h"
+@class RPSGame;
 
 @interface RPSController : NSObject
 
