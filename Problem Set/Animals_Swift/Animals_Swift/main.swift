@@ -26,14 +26,20 @@ let cityAnimal = myApartment.animals![randomNumber]
 if let animal = farmAnimal as? Rat {
     animal.scurry()
 }
-else {
-    print("Animal doesn't scurry.")
+else if let animal = farmAnimal as? GoldenDoodle {
+    animal.romp()
+}
+else if let animal = farmAnimal as? Pig {
+    animal.wallow()
 }
 if let animal = cityAnimal as? Pigeon {
     animal.deliverMessage()
 }
-else {
-    print("Animal can't deliver a message.")
+else if let animal = cityAnimal as? Rat {
+    animal.scurry()
+}
+else if let animal = cityAnimal as? GoldenDoodle {
+    animal.romp()
 }
 
 

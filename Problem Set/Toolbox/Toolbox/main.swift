@@ -20,6 +20,6 @@ let tool = myToolbox.tools[randomIndex]
 if let t = tool as? Drill {
     t.screw()
 }
-else {
-    print("This tool can't screw.")
+else if let t = tool as? Hammer {
+    t.drive()
 }
